@@ -1,6 +1,8 @@
-# **FHIR Kata: Patient Vaccination Tracker**
+# **FHIR Kata: Zombie Infection Vaccination Tracker**
 
 ## **Scenario:**
+There is a new Zombie outbreak - but fear not, the scientists already developed a vaccine that prevents infection by 100%!
+
 You are building a simple system to track patient vaccinations using FHIR resources. Your task is to create a program that manages a patient's vaccination history. This involves creating a `Patient` resource and linking it to `Immunization` resources that record the details of the vaccines the patient has received.
 
 This exercise is a bit more meaningful rather than simply calling the API because it simulates a real-world healthcare use case. It also introduces the concept of linking FHIR resources (e.g., `Patient` and `Immunization`), which is a core part of working with FHIR in practice. Have fun coding! 😊
@@ -51,6 +53,7 @@ This exercise is a bit more meaningful rather than simply calling the API becaus
 
 ## **Sample Output**
 
+```
 Patient created successfully:
 {'resourceType': 'Patient', 'id': '801104', 'meta': {'versionId': '1', 'lastUpdated': '2025-07-09T14:50:52.010+00:00'}, 'text': {'status': 'generated', 'div': '<div xmlns="http://www.w3.org/1999/xhtml"><div class="hapiHeaderText">Alice <b>JOHNSON </b></div><table class="hapiPropertyTable"><tbody><tr><td>Date of birth</td><td><span>15 May 1990</span></td></tr></tbody></table></div>'}, 'name': [{'family': 'Johnson', 'given': ['Alice']}], 'gender': 'female', 'birthDate': '1990-05-15'}
 
@@ -63,6 +66,7 @@ Immunization created successfully:
 Vaccination history for patient 801104:
 - COVID-19 (Pfizer) on 2022-01-15 (Status: completed)
 - Influenza on 2021-10-01 (Status: completed)
+```
 
 ---
 
